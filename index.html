@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG to Image Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>SVG to Image Converter</h1>
+    <div class="upload-section">
+      <label for="svgFile">Upload SVG File:</label>
+      <input type="file" id="svgFile" accept=".svg">
+    </div>
+    <div class="options">
+      <label for="format">Select Format:</label>
+      <select id="format">
+        <option value="png">PNG</option>
+        <option value="jpeg">JPEG</option>
+      </select>
+    </div>
+    <button id="convertBtn">Convert</button>
+    <div class="output">
+      <h2>Converted Image:</h2>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <a id="downloadLink" style="display: none;">Download Image</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
